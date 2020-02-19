@@ -1,6 +1,7 @@
 module.exports = async function (context, req) {
+    var dt = new Date.now();
     context.log('Generating Nonsense...');
     context.res = {
-        body: "Bibble wibble wobble"
+        body: "Automation test, current date: " + dt.toString()
     };
 };
